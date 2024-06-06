@@ -1,0 +1,37 @@
+#' @title Mayo Clinic Primary Biliary Cirrhosis Data
+#' @description
+#' Followup of 312 randomised patients with primary biliary cirrhosis, a rare autoimmune liver disease, at Mayo Clinic。
+#' @usage data(pbc2)
+#' @name pbc2
+#' @format A numeric dataframe
+#'  \describe{
+#'  \item{id}{patients identifier; in total there are 312 patients.}
+#'  \item{years}{number of years between registration and the earlier of death, transplantion, or study analysis time.}
+#'  \item{status}{a factor with levels alive, transplanted and dead.}
+#'  \item{drug}{a factor with levels placebo and D-penicil.}
+#'  \item{age}{at registration in years.}
+#'  \item{sex}{a factor with levels male and female}
+#'  \item {year} {number of years between enrollment and this visit date, remaining values on the line of data refer to this visit.}
+#'  \item {ascites} {a factor with levels No and Yes.}
+#'  \item {hepatomegaly} {a factor with levels No and Yes.}
+#'  \item {spiders} {a factor with levels No and Yes.}
+#'  \item {edema} {a factor with levels No edema (i.e., no edema and no diuretic therapy for edema), edema no diuretics (i.e., edema present without diuretics, or edema resolved by diuretics), and edema despite diuretics (i.e., edema despite diuretic therapy).}
+#'  \item {serBilr} {serum bilirubin in mg/dl.}
+#'  \item {serChol} {serum cholesterol in mg/dl.}
+#'  \item {albumin} {albumin in gm/dl.}
+#'  \item {alkaline} {alkaline phosphatase in U/liter.}
+#'  \item {SGOT} {SGOT in U/ml.}
+#'  \item {platelets} {platelets per cubic ml / 1000.}
+#'  \item {prothrombin} {prothrombin time in seconds.}
+#'  \item {histologic} {histologic stage of disease.}
+#'  \item {status2} {a numeric vector with the value 1 denoting if the patient was dead, and 0 if the patient was alive or transplanted.}}
+#'  @note
+#'  The data frame pbc2.id contains the first measurement for each patient. This data frame is used to fit the survival model.
+#'  @references
+#'  \describe{
+#'  \item{Fleming, T. and Harrington, D. (1991) Counting Processes and Survival Analysis. Wiley, New York.}
+#'  \item{Therneau, T. and Grambsch, P. (2000) Modeling Survival Data: Extending the Cox Model. SpringerVerlag, New York.}}
+#'  @examples
+#'  data(pbc2)
+#'  data(pbc2.id)
+NULL
